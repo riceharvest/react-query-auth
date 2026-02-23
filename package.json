@@ -1,0 +1,78 @@
+{
+  "type": "module",
+  "name": "@opensourceframework/react-query-auth",
+  "version": "2.4.3",
+  "description": "Authenticate your react applications easily with react-query",
+  "keywords": [
+    "react",
+    "reactjs",
+    "react-query",
+    "auth",
+    "authentication"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "biome check src",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --passWithNoTests",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riceharvest/opensourceframework.git",
+    "directory": "packages/react-query-auth"
+  },
+  "author": "OpenSource Framework Contributors (fork), Original: Alan (alan2207)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/riceharvest/opensourceframework/issues?q=is%3Aissue+is%3Aopen+react-query-auth"
+  },
+  "homepage": "https://github.com/riceharvest/opensourceframework/tree/main/packages/react-query-auth#readme",
+  "devDependencies": {
+    "@tanstack/react-query": "^5.0.0",
+    "@testing-library/react": "^16.0.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^2.0.0"
+  },
+  "peerDependencies": {
+    "@tanstack/react-query": ">=4.0.0",
+    "react": ">=16.8.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "contributors": [
+    {
+      "name": "Alan (alan2207)",
+      "url": "https://github.com/alan2207/react-query-auth"
+    }
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "funding": {
+    "type": "GitHub",
+    "url": "https://github.com/sponsors/riceharvest"
+  }
+}
